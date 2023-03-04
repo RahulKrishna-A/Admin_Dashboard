@@ -1,0 +1,197 @@
+:root{
+    font-size: 13px;
+    --image-height:100%;
+    --image-width:40%;
+}
+
+*{
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+/*container*/
+#container{
+    display: grid;
+    grid-template: 1fr 6.4fr/3.5vw 96.5vw;
+    background-color: #FFB17A;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+/*dashboard*/
+.dashboard{
+    background-color: #171918;
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+
+
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#top-icon img{
+    width: 2.5vmax;
+    margin-top: 20%;
+
+}
+.icon{
+    width:100% ;
+    display: flex;
+    justify-content: center;
+}
+
+.top>.icon{
+    margin-top: 3rem;
+
+}
+
+.icon img{
+    height: var(--image-height);
+    width: var(--image-width);
+
+}
+
+.bottom {
+    justify-self: flex-end;
+    margin-bottom: 4vh;
+
+
+}
+
+.bottom>.icon{
+    margin-top: 3rem;
+}
+
+.bottom>.icon{
+    display: flex;
+    justify-content: center;
+}
+
+.dp img{
+  width: 70%;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #06f3ee;
+}
+
+
+
+/*nav*/
+.nav{
+    background-color: black;
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 4fr;
+    gap: 0.5vw;
+}
+
+.nav>div{
+    /*background-color: #FFB17A;*/
+    display: flex;
+    align-items: center;
+    padding: 0;
+    /*justify-content: center;*/
+}
+
+.dash p{
+    color:white;
+    font-size: 2vmax;
+    font-family: zeitung, sans-serif;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+
+.navhome{
+    display: flex;
+    width: 50%;
+     background-color: #2d2c2c;
+    margin-left: 5%;
+    font-size: 1vw;
+    align-items: center;
+    color: #E8E8E8;
+    justify-content: center;
+    height: 25%;
+    border-radius: 20rem 2rem 20rem 2rem;
+}
+
+.navhome img{
+   height:0.8vw ;
+    width: 1vw;
+    margin-left: 0.5vw;
+}
+
+.navright{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navright>*{margin-right: 2vw;
+}
+.navright img{
+    border-radius: 50%;
+}
+.navright img:hover{
+    box-shadow: 0px 0px 8px 2px deepskyblue;
+}
+
+.navright p{
+    color: #E8E8E8;
+    font-family: zeitung, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-style: oblique;
+    text-shadow:0 0.4rem 0.8rem yellow;
+
+}
+
+#GIT{
+    transition: All 0.5s ease-in-out 0.2ms;
+
+}
+#GIT:hover{
+   transform: rotate(720deg) scale(1.3);
+
+  fill: yellow;
+
+}
+
+.rightdp{
+    height: 5vmin;
+
+}
+
+    /*contents*/
+
+.contents{
+    background-color: #272727;
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    /*    8A8F8BC6*/
+}
